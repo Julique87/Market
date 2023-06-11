@@ -1,13 +1,13 @@
 package ru.netology;
 
 public class Manager {
-    private static Repository repo;
+    private Repository repo;
 
     public Manager(Repository repo) {
         this.repo = repo;
     }
 
-    public void add(Product product) {               // Static?
+    public void add(Product product) {
         repo.add(product);
     }
 
