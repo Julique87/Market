@@ -16,16 +16,30 @@ public class Repository {
         products = tmp;
     }
 
-    public void removeById(int id) {
+    public void removeById(int removeId) {
+        Product removeProduct = findById(removeId);
+        if (removeProduct == null) {
+            throw new NotFoundException(removeId);
+        }
+
         Product[] tmp = new Product[products.length - 1];
         int copyToIndex = 0;
         for (Product product : products) {
-            if (product.getId() != id) {
+            if (product.getId() != removeId) {
                 tmp[copyToIndex] = product;
                 copyToIndex++;
             }
         }
         products = tmp;
 
+    }
+
+    public Product findById(int id) {
+        for (Product product : products) {
+            if (product.getId() == id) {
+                return product;
+            }
+        }
+        return null;
     }
 }

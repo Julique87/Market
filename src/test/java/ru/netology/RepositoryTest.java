@@ -18,7 +18,7 @@ public class RepositoryTest {
 
 
     @Test
-    public void shouldRemoveById() {                                  // Удаление по id
+    public void shouldRemoveByIdWhenProductExist() {                                  // Удаление по idб, когда товар существует
 
         repo.add(book1);
         repo.add(book2);
@@ -32,6 +32,23 @@ public class RepositoryTest {
         Product[] expected = {book1, book2, book3, phone1, phone3};
 
         Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldRemoveByIdWhenProductDoesNotExist() {                                  // Удаление по idб, когда товар не существует
+
+        repo.add(book1);
+        repo.add(book2);
+        repo.add(book3);
+        repo.add(phone1);
+        repo.add(phone2);
+        repo.add(phone3);
+
+
+        Assertions.assertThrows(NotFoundException.class,
+                () -> repo.removeById(20)
+        );
+
     }
 
 }

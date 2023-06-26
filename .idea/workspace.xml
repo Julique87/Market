@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97c3cbe4-0fb5-4e19-94c5-f3b4910d53c9" name="Changes" comment="" />
+    <list default="true" id="97c3cbe4-0fb5-4e19-94c5-f3b4910d53c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/RepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/RepositoryTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,7 +50,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_directory_selection": "C:/Users/user/Desktop/Netology/hw/Market/src/main/java"
+    "last_directory_selection": "C:/Users/user/Desktop/Netology/hw/Market/src/main/java",
+    "last_opened_file_path": "C:/Users/user/Desktop/Netology/hw/Market"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -62,7 +68,7 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RepositoryTest.shouldRemoveByIdWhenProductDoesNotExist">
     <configuration name="RepositoryTest.shouldNotRemoveById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="market" />
       <extension name="coverage">
@@ -74,6 +80,22 @@
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.RepositoryTest" />
       <option name="METHOD_NAME" value="shouldNotRemoveById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.shouldRemoveByIdWhenProductDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="market" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.RepositoryTest" />
+      <option name="METHOD_NAME" value="shouldRemoveByIdWhenProductDoesNotExist" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,6 +116,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RepositoryTest.shouldRemoveByIdWhenProductDoesNotExist" />
         <item itemvalue="JUnit.RepositoryTest.shouldNotRemoveById" />
       </list>
     </recent_temporary>
